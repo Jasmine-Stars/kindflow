@@ -1,73 +1,225 @@
-# Welcome to your Lovable project
+## 一、产品概述
 
-## Project info
+### 1.1 产品名称（暂定）
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+善意流动平台 / KindFlow
 
-## How can I edit this code?
+### 1.2 产品愿景
 
-There are several ways of editing your application.
+构建一个让「善意」可以被量化、记录、流通和激励的 Web3 公益互助平台，通过平台通证——**善意币**，激励用户参与互助行为、公共监督与社会治理，从而形成一个可持续的善意生态系统。
 
-**Use Lovable**
+### 1.3 核心理念
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+- 善行应被记录、可追踪、可激励
+- 公共监督是一种善
+- 善意应当流动，而非一次性消耗
+- 不能提现，但可以形成社会价值闭环
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 二、角色定义
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 2.1 角色类型
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### 1）个人用户
 
-Follow these steps:
+- 可以发布受助任务
+- 可以参与帮助他人
+- 可以关注恶性事件
+- 可以获得和使用善意币
+- 可以购买善意币
+- 免费使用平台
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### 2）团体 / 企业用户
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- 公益组织、NGO、志愿团体、企业CSR部门等
+- 需支付月费 / 年费
+- 可发布任务、发起项目
+- 可获得平台曝光
+- 可购买善意币
+- 可用善意币进行推广和打赏
 
-# Step 3: Install the necessary dependencies.
-npm i
+### 3）平台运营方
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+- 维护平台秩序
+- 审核任务与事件
+- 提供激励
+- 运营社区
+- 负责商业化
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 三、系统模块
 
-**Use GitHub Codespaces**
+### 3.1 模块一：善意互助模块（帮助模块）
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### 功能描述
 
-## What technologies are used for this project?
+围绕“受助任务”和“善意行为”的发布、完成、打赏与传播。
 
-This project is built with:
+### 核心功能
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+1）受助任务发布
 
-## How can I deploy this project?
+- 用户发布自己需要帮助的任务
+- 需支付一定数量的善意币
+- 支付越多，曝光越高
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+2）任务接取与完成
 
-## Can I connect a custom domain to my Lovable project?
+- 其他用户可接取任务
+- 提供帮助并提交证明
 
-Yes, you can!
+3）打赏系统
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+- 对完成任务者进行善意币打赏
+- 也可额外奖励
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+4）善意行为记录
+
+- 每一次帮助都会生成链上记录
+- 可形成个人善意履历
+
+5）任务曝光机制
+
+- 根据支付善意币数量进行排序
+- 防止恶意刷榜
+
+---
+
+### 3.2 模块二：恶性事件追踪模块
+
+### 功能定位
+
+将公共监督行为定义为一种善行，通过结构化记录、关注与行动，促进社会治理。
+
+### 功能点
+
+1）恶性事件发布
+
+- 诈骗、侵权、违法、欺诈、公共安全事件等
+- 需支付一定数量善意币
+
+2）事件结构化
+
+- 时间
+- 地点
+- 涉及主体
+- 证据上传
+- 事件状态（处理中/已解决/失败）
+
+3）事件关注
+
+- 关注 = 一种善意行为
+- 需消耗少量善意币
+
+4）行动型贡献
+
+- 提交举报记录（如12315、警方报案）
+- 上传证据
+- 这些行为可获得善意币奖励
+
+5）事件链上存证
+
+- 时间戳
+- 行为记录
+- 不可篡改
+
+---
+
+## 四、善意币（Token）设计
+
+### 4.1 定位
+
+- 平台内唯一流通通证
+- 不可提现
+- 代表行为价值
+- 用于激励、筛选与治理
+
+---
+
+### 4.2 获取方式
+
+1）完成受助任务
+
+2）提供有效帮助
+
+3）关注恶性事件
+
+4）提交有效证据
+
+5）平台激励
+
+6）购买
+
+---
+
+### 4.3 消耗方式
+
+1）发布受助任务
+
+2）提高任务曝光
+
+3）打赏他人
+
+4）发布/关注恶性事件
+
+5）参与社区治理
+
+---
+
+### 4.4 不可提现机制说明
+
+- 防止投机
+- 聚焦行为激励
+- 避免法律风险
+- 维持生态纯度
+
+---
+
+## 五、商业模式
+
+### 5.1 收入来源
+
+1）善意币售卖
+
+2）企业 / 团体会员费（月费 / 年费）
+
+3）企业赞助
+
+4）品牌公益合作
+
+5）官方活动与专题
+
+---
+
+### 5.2 企业与团体权益
+
+- 首页曝光位
+- 任务优先推荐
+- 品牌展示
+- 公益背书
+- 数据面板
+- 项目页
+
+---
+
+## 六、激励与防作弊机制
+
+### 6.1 激励设计
+
+- 等级系统
+- 勋章
+- 声誉值
+- 善意履历
+- 链上徽章NFT
+
+---
+
+### 6.2 防作弊
+
+- 多重审核
+- 社区举报
+- 行为风控
+- 恶意惩罚机制
+- 信誉衰减
